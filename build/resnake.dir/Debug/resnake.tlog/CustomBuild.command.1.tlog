@@ -1,0 +1,10 @@
+^D:\MYREPOSITORY\MYPROJECT\CWORK\REBUILD\CMAKELISTS.TXT
+setlocal
+D:\CMake\bin\cmake.exe -SD:/MyRepository/MyProject/cwork/rebuild -BD:/MyRepository/MyProject/cwork/rebuild/build --check-stamp-file D:/MyRepository/MyProject/cwork/rebuild/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

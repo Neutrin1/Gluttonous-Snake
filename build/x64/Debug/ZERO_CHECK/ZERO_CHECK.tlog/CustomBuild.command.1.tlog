@@ -1,0 +1,10 @@
+^D:\MYREPOSITORY\MYPROJECT\CWORK\REBUILD\BUILD\CMAKEFILES\2EFA2BAFF43F48F58A0D42310D1D6D4B\GENERATE.STAMP.RULE
+setlocal
+D:\CMake\bin\cmake.exe -SD:/MyRepository/MyProject/cwork/rebuild -BD:/MyRepository/MyProject/cwork/rebuild/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/MyRepository/MyProject/cwork/rebuild/build/resnake.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

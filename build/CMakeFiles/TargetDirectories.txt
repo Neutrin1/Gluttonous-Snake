@@ -1,0 +1,3 @@
+D:/MyRepository/MyProject/cwork/rebuild/build/CMakeFiles/resnake.dir
+D:/MyRepository/MyProject/cwork/rebuild/build/CMakeFiles/ALL_BUILD.dir
+D:/MyRepository/MyProject/cwork/rebuild/build/CMakeFiles/ZERO_CHECK.dir
